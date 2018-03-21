@@ -4,7 +4,7 @@
   <!-- Should be fairly self-explanitory, but "en" means the browser will render the site in English. -->
   <!-- Everything that gets displayed by the browser exists between the HTML tags. -->
 <head>
-  <title>My First HTML Document</title>
+  <title>**NOT** My First HTML Document</title>
     <!-- The HEAD tag allows you to put meta info, the page title, and links to the CSS Stylesheets you'll be using. Besides the "Title", the user of the site will not see anything that's in here. Unless they view the source or something. Your links to the css scripts will also go here. -->
     <meta charset="utf-8">
     <meta name="description" content="This is an HTML5 example"/>
@@ -36,9 +36,14 @@
       </header>
         This is the first post!
         <figure>
-          <img src="http://minkbooks.com/content/myimage.jpg">
+          <img src="http://andor1.github.io/images/for-real.gif">
             <figcaption>
               This is the image of the first post
+                <details>
+                    <!-- The "details" tag allows you to hide information until the user clicks the arrow on screen. This does not require any fancy Javascript or anything! -->
+                  <summary>Click me!</summary>
+                  <p>Looky looky!</p>
+                </details>
             </figcatption>
         </figure>
       <footer>
