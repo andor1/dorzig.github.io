@@ -33,8 +33,10 @@
       <!-- An article is simply a part of the "section" tag. It doesn't mean it's a news article. It can be any content you wish to put here. It's an independant section of content, and can have it's own header, footer, etc... -->
       <header>
         <h1>Title of Article 1</h1>
+        <time datetime="2018-03-22T10:30:00" pubdate>March 22, 2018</time>
+          <!-- The "time" tag allows you to place both a machine readable and human readable timestamp on an article. You can use either just the date, or the time the post was published in a YEAR-MONTH-DAYTHH:MM:SS format. Obviously, the machine readable stuff will come in handy later, as the viewer can't see this stuff, but you will be able to have the browser read the timestamp to organize or find certain posts. -->
       </header>
-        This is the first post!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         <figure>
           <img src="http://andor1.github.io/images/for-real.gif">
             <figcaption>
@@ -68,6 +70,7 @@
   </aside>
   <footer>
     Copyright &copy; 2018-2019
+    <address><a href="http://www.whatsadoran.com">My Website</a></address>
   </footer>
 </body>
 </html>
