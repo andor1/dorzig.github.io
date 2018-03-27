@@ -4,7 +4,7 @@
   <!-- Should be fairly self-explanitory, but "en" means the browser will render the site in English. -->
   <!-- Everything that gets displayed by the browser exists between the HTML tags. -->
 <head>
-  <title>**NOT** My First HTML Document</title>
+  <title><i>NOT</i>My First HTML Document</title>
     <!-- The HEAD tag allows you to put meta info, the page title, and links to the CSS Stylesheets you'll be using. Besides the "Title", the user of the site will not see anything that's in here. Unless they view the source or something. Your links to the css scripts will also go here. -->
     <meta charset="utf-8">
     <meta name="description" content="This is an HTML5 example"/>
@@ -58,6 +58,42 @@
         <h1>Title of Article 2</h1>
       </header>
         This is the second post!
+
+        <p data-firstname="Doran">By Doran</p>
+        <!-- The data tag allows you to assign machine readable info inside a tag. This can be accessed by Javascript for example. This stored data allows the Javascript to do things within the browser without the need for server-side database calls or Ajax code. The above code lets the Javascript know my name is Doran. -->
+
+        <ol reversed>
+          <!-- Does what it says on the label. Reverses the ordered list order. -->
+          <li>Ready</li>
+          <li>Aim</li>
+          <li>Fire</li>
+        </ol>
+
+        <br>
+
+         <a href="https://www.w3schools.com/html" ping="https://www.w3schools.com/trackpings" download>Click me!</a>
+         <!-- So, inside the 'a' tag, you can specify if the link is meant to be a file for downloading (hence the "download" tag... please note that in the example above, I've not given it an actual file to download so this link doesn't work. If it were a .pdf or .gif, this would function.), and you can also list an address to ping for tracking usage. This is helpful if you're linking to a page that wants to keep track of such things. The above "trackpings" link is just such a page. -->
+
+         <br>
+
+         <a href="http://andor1.github.io/images/for-real.gif" download>Click here to download!</a>
+         <!-- See? now isn't that better?!?! This link actually forces the download to happen! -->
+
+         <br>
+
+         <p>Did you know that you can force the browser to not translate selected <span translate="no">la mierda</span>?</p>
+         <!-- So, yeah. Default on all text in the content window would be translate="true", so that the browser would automatically translate into, say, English for me, since that's my language. This can be helpful so that if you've got a proper name or something, and you don't want some translation to screw up a specific name or something along those lines. -->
+
+         <br>
+
+         <p> Listen up motherfuckers, all I got in my pockets is <span contenteditable="true">lint</span></p>
+         <!-- Yeah, it's just friggin' link.
+
+         ...Default on this tag is always "false", but if you change contenteditable to "true", users can type in whatever text they want on your site. -->
+
+         <p> Spellcheck this, <span spellcheck="false">motherfathers!</span></p>
+         <!-- ...and with one fell swoop, you can make it so the browser can't spellcheck that text in the span. I'm sure it's got a purpose. -->
+
       <footer>
         <p>Comments (0)</p>
       </footer>
