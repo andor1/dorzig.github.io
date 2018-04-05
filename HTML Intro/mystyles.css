@@ -1,1 +1,19 @@
 /* sonafabitch this is a comment */
+
+/* I am referencing the keyword in the HTML to select something I want to change the style on. This code will affect anything with the keyword. */
+p {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4 {
+  font-family: monospace;
+  color: blue;
+}
+
+/* So, here I'm using a ID selector, denoted by the # sign. Notice that the previous styles that are applied to "p" above, still apply, and would be until something in the Class selection style overrides it. */
+#motherfuckers {
+  color: red;
+}
+
+/* Of course, the ID tag can only be used to select 1 thing. In the case above, its the #motherfuckers paragraph. So, while it can occasionally be helpful for styling, it's greater use is in helping JAVASCRIPT detect a specific item in the document. */
